@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--    ========== BLUE HEADER & NAVIGATION ==========   -->
+    <div class="container header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="container brand">
+                    <img class="img_brand" src="./images/brand.png" alt="brand-image">
+                    <a class="navbar-brand" href="#">Le-Beauty</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link home" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link about-us" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link department" aria-current="page" href="#">Department</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-us" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pages" aria-current="page" href="#">Pages</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-success make-an-appointment" type="submit">Make an
+                            appointment</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <pre class="title">About
+Le-Beauty</pre>
+        <img src="images/arrow.svg" class="arrow">
+        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed de eiusmod..</p>
+
+    </div>
+
+    <!--    ========== IMAGE AND FORM CONTAINER  ==========   -->
+
+    <div id="image-and-form" class="container">
+        <div class="row">
+            <div class="col col-md-6 ">
+                <img class="image" src="images/img.jpg" srcset="images/img@2x.jpg 2x,
+                images/img@3x.jpg 3x" alt="Dentistry chair">
+            </div>
+            <div class="col col-sm-12 col-md-6 appointment">
+                <h3>Appointment</h3>
+                <form action="" class="form-control form">
+                    <select class="form-select" aria-label="Location">
+                        <option selected>Select Location</option>
+                        <option value="1">Bucharest</option>
+                        <option value="2">London</option>
+                        <option value="3">New York</option>
+                    </select>
+                    <input class="form-control" type="text" name="yourName" placeholder="Your Name">
+                    <input class="form-control" type="text" name="date" placeholder="Birthday DD/MM/YY">
+                    <input class="form-control" type="text" name="phone" placeholder="Your Phone">
+                    <input class="form-control" type="email" name="email" placeholder="Your Email">
+                    <textarea class="form-control" name="message" id="yourMessage" cols="20" rows="4"
+                        placeholder="Your Message"></textarea>
+                    <input class="btn btn-primary form-control formBtn" type="button" value="Make an Appointment">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--    ========== ABOUT US CONTAINER  ==========   -->
+    <div id="about-us" class="container">
+        <h2>ABOUT US</h2>
+        <h1>We have more than <strong>10 years</strong> experience</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <hr>
+    </div>
+
+
+
+    <!--    ========== OUR SERVICES CONTAINER ==========   -->
+    <div id="services-and-cards" class="container">
+        <div class="row">
+            <div id="our-services" class="col col-xs-12 col-sm-6">
+                <h2>OUR SERVICES</h2>
+                <h1>We are providing the <strong>top services</strong></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.</p>
+                <ul>
+                    <li>Eye care</li>
+                    <li>Dental care</li>
+                    <li>Primary care</li>
+                    <li>Cardiology</li>
+                </ul>
+                <button class="bnt btn-primary">All Sevices</button>
+            </div>
+            <div id="first-card-col" class="col col-xs-12 col-sm-3">
+                <div class="cards card-eye">
+                    <img src="images/service-icon-eye.svg" class="cards-img">
+                    <h1>Eye care</h1>
+                </div>
+
+                <div class="cards card-primary">
+                    <img src="images/service-icon-primary.svg" class="cards-img">
+                    <h1>Primary care</h1>
+                </div>
+            </div>
+            <div id="second-card-col" class="col col-xs-12 col-sm-3">
+                <div class="cards card-dental">
+                    <img src="images/service-icon-teeth.svg" class="cards-img">
+                    <h1>Dental care</h1>
+                </div>
+                <div class="cards card-cardiology">
+                    <img src="images/service-icon-heart.svg" class="cards-img">
+                    <h1>Cardiology</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    ========== OUR DOCTORS CONTAINER  ==========   -->
+    <div id="our-doctors" class="container">
+        <h2>OUR DOCTORS</h2>
+        <h1>They are <strong>all experts</strong></h1>
+        <div class="row row-doctors">
+            <div class="col col-xs-12 col-md-3 dr1">
+                <img src="images/img0.png" srcset="images/img@2x.png 2x,
+             images/img@3x.png 3x">
+                <h1 id="name-dr">Michael Scofield</h1>
+                <p id="title-dr">LEAD OF DOCTORS</p>
+            </div>
+            <div class="col col-xs-12 col-md-3 dr2">
+                <img src="images/img1.png" srcset="images/img@2x.png 2x,
+             images/img@3x.png 3x">
+                <h1 id="name-dr">Michael Scofield</h1>
+                <p id="title-dr">LEAD OF DOCTORS</p>
+            </div>
+            <div class="col col-xs-12 col-md-3 dr3">
+                <img src="images/img2.png" srcset="images/img@2x.png 2x,
+                        images/img@3x.png 3x">
+                <h1 id="name-dr">Michael Scofield</h1>
+                <p id="title-dr">LEAD OF DOCTORS</p>
+            </div>
+            <div class="col col-xs-12 col-md-3 dr4">
+                <img src="images/img3.png" srcset="images/img@2x.png 2x,
+                        images/img@3x.png 3x">
+                <h1 id="name-dr">Michael Scofield</h1>
+                <p id="title-dr">LEAD OF DOCTORS</p>
+            </div>
+        </div>
+    </div>
+
+    <!--    ========== JOIN TEAM CONTAINER  ==========   -->
+    <div id="join-team" class="container">
+        <h1>Wanna join our team?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#">View all careers</a>
+    </div>
+
+    <!--    ========== TESTIMONIALS CONTAINER  ==========   -->
+    <div id="testimonials" class="container">
+        <div class="row test-row">
+            <img src="images/strong-arrow.png" class="strong-arrow" style="width: 65px; height: 20px">
+            <div class="col col-xs-12 col-sm-4 first-col">
+                <h2>TESTIMONIAL</h2>
+                <h1>What <strong>clients</strong> say about us</h1>
+            </div>
+            <div class="col col-xs-12 col-sm-4 white-col testimonial1">
+                <img src="images/oval.jpg" srcset="images/oval@2x.jpg 2x,
+             images/oval@3x.jpg 3x" class="Oval">
+                <h4 class="name-test">Frank Gallaghers</h4>
+                <p class="patient-test">Patient</p>
+                <p class="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. </p>
+                <img src="images/fade-arrow.png" class="fade-arrow" style="width: 40px">
+            </div>
+            <div class="col col-xs-12 col-sm-4 white-col testimonial2">
+                <img src="images/oval1.jpg" srcset="images/oval@2x.jpg 2x,
+             images/oval@3x.jpg 3x" class="Oval">
+                <h4 class="name-test">Frank Gallaghers</h4>
+                <p class="patient-test">Patient</p>
+                <p class="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <!--
+            <div class="col col-sm-3 whiteCol">
+                <img src="oval2.jpg" srcset="img/oval@2x.jpg 2x,
+             img/oval@3x.jpg 3x" class="Oval">
+                <h4 class="nameTest">Frank Gallaghers</h4>
+                <p class="patientTest">Patient</p>
+                <p class="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+-->
+        </div>
+    </div>
+
+    <!--    ========== OUR BLOGS CONTAINER  ==========   -->
+    <div id="blog" class="container">
+        <h2>OUR BLOGS</h2>
+        <h1>Our <strong> latest </strong>news</h1>
+        <div class="card-group">
+            <div class="card">
+                <img src="images/imgBlog.jpg" srcset="images/img@2x.jpg 2x,
+             images/img@3x.jpg 3x" class="card-img-top img" alt="Lab">
+                <div class="card-body">
+                    <p class="card-text">Medicine - Aug 6, 2019</p>
+                    <h5 class="card-title">Medicine for headache</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/imgBlog1.jpg" srcset="images/img@2x.jpg 2x,
+             images/img@3x.jpg 3x" class="card-img-top img" alt="Lab">
+                <div class="card-body">
+                    <p class="card-text">Medicine - Aug 6, 2019</p>
+                    <h5 class="card-title">Medicine for headache</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/imgBlog2.jpg" srcset="images/img@2x.jpg 2x,
+             images/img@3x.jpg 3x" class="card-img-top img" alt="Lab">
+                <div class="card-body">
+                    <p class="card-text">Medicine - Aug 6, 2019</p>
+                    <h5 class="card-title">Medicine for headache</h5>
+                </div>
+            </div>
+        </div>
+        <a class="colored-a" href="#">View all blogs</a>
+    </div>
+
+    <!--    ========== CONTACT CONTAINER  ==========   -->
+    <div id="contact" class="container">
+        <div class="row first-row">
+            <div class="col col-sm-6 column1">
+                <h5>NEED A DOCTOR FOR CHECK UP</h5>
+                <p>Just make an appointment</p>
+            </div>
+            <div class="col col-sm-6 column2">
+                <button class="btn">Make an appointment</button>
+            </div>
+        </div>
+        <div class="row second-row">
+            <div class="col col-xs-12 col-md-6 leBeauty-col">
+                <img class="images/imgBrand" src="brand.png" alt="brand-image">
+                <h4>Le-Beauty</h4>
+                <p class="dummy-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua.</p>
+
+                <div class="contact-details">
+                    <img src="images/group.svg" class="group">
+                    <p>59 Street, 1200 Techpark</p>
+                </div>
+                <div class="contact-details">
+                    <img src="images/group1.svg" class="group">
+                    <p>0123456789</p>
+                </div>
+                <div class="contact-details">
+                    <img src="images/group2.svg" class="group">
+                    <p>8:00 am - 17:00 pm, Monday - Friday</p>
+                </div>
+            </div>
+
+            <div class="col col-xs-12 col-md-3 quick-link-col">
+                <h3>Quick link</h3>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Our Mission</li>
+                    <li>Awards</li>
+                    <li>Experience</li>
+                    <li>Success Story</li>
+                </ul>
+            </div>
+            <div class="col col-xs-12 col-md-3 department-col">
+                <h3>Department</h3>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Our Mission</li>
+                    <li>Awards</li>
+                    <li>Experience</li>
+                    <li>Success Story</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--    ========== FOOTER CONTAINER  ==========   -->
+    <div id="footer" class="container">
+        <p>&copy; Copyright Le-Beauty 2019. All Rights Reserved. Designed and Developed by LessCreate</p>
+    </div>
+    
+</body>
+
+</html>
